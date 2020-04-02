@@ -21,7 +21,7 @@
           {{/if_equal}}
 
           <div class="form-group">
-            <label for="leave_type" class="control-label">Ma disponibilité</label>
+            <label for="leave_type" class="control-label">Type de disponibilité</label>
             <select class="form-control" id="leave_type" name="leave_type">
             {{# each logged_user.company.leave_types}}
                 <option value={{@index}} data-tom="{{this.name}}">{{this.name}}</option>
